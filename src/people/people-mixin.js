@@ -4,11 +4,9 @@ export default {
   },
   computed: {
     people() {
-      return (
-        this.$store.state.people || {
-          people: []
-        }
-      );
+      return this.$store.state.people || {
+        people: []
+      };
     }
   }
 };

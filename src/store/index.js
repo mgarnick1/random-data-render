@@ -17,7 +17,7 @@ export default new Vuex.Store({
   actions: {
     getPeople({ commit }) {
       axios
-        .get("api/people")
+        .get("/people")
         .then(result => commit("updatePeople", result.data))
         // eslint-disable-next-line no-console
         .catch(console.error);
